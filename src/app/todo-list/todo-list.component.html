@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-todo-edit></app-todo-edit>
+    <hr>
+    <ul class="list-group">
+      <a [@listAdded]
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let tdlist of todoList; let i = index"
+        (click)="onEditItem(i)"
+         [ngClass]="{high: tdlist.priority === 'High' , medium: tdlist.priority === 'Medium', normal: tdlist.priority==='Normal'}"
+      >
+       <b> {{ tdlist.whendate | date :'MMM dd, yyyy'  }}</b> - {{ tdlist.name }}
+      </a>
+    </ul>
+  </div>
+</div>

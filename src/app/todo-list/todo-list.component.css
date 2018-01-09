@@ -1,0 +1,14 @@
+.high{
+  border: 1px solid red;
+}
+.medium{
+  border: 1px solid yellow;
+}
+.normal
+{
+  border: 1px solid blue;
+}
+ul a{
+  margin: 1px;
+  border-radius: 1px;
+}
